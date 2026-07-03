@@ -38,7 +38,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${FiraCode.variable} font-sans antialiased`}>
+        {children}
+        </body>
     </html>
   );
 }
