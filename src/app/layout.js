@@ -1,4 +1,27 @@
 import "./globals.css";
+import localFont from "next/font/local";
+
+// Fira Code font configuration (local font)
+const FiraCode = localFont({
+  
+  src: [
+    {
+      path: "./fonts/FiraCode-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/FiraCode-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+
+  variable: "--font-fira-code",
+  display: "swap",
+
+});
+
 
 // Global metadata for the application
 export const metadata = {
