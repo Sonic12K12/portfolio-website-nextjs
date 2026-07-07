@@ -1,8 +1,8 @@
-// middleware.js
+// proxy.js
 import { NextResponse } from "next/server";
 
-// Middleware function to protect routes
-export function middleware(request) {
+// Proxy function to protect routes
+export function proxy(request) {
   // Check for the authentication cookie
   const authCookie = request.cookies.get("portfolio_auth");
   const url = request.nextUrl.clone();
@@ -23,7 +23,7 @@ export function middleware(request) {
   return NextResponse.next();
 }
 
-// Define which routes the middleware should protect
+// Define which routes the proxy should protect
 // Exclude API routes, static Next.js files, and our public image folder
 export const config = {
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico|img).*)"],
