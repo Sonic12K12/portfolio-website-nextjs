@@ -1,0 +1,30 @@
+// middleware.js
+import { NextResponse } from "next/server";
+
+// Middleware function to protect routes
+export function middleware(request) {
+  // Check for the authentication cookie
+  const authCookie = request.cookies.get("portfolio_auth");
+  const url = request.nextUrl.clone();
+
+  // Redirect to login if cookie is missing and user is not already on the login page
+  if (!authCookie && url.pathname !== "/login") {
+    url.pathname = "/login";
+    return NextResponse.redirect(url);
+  }
+
+  // Redirect to home if user is already logged in but tries to access the login page
+  if (authCookie && url.pathname === "/login") {
+    url.pathname = "/";
+    return NextResponse.redirect(url);
+  }
+
+  // Allow the request to proceed normally
+  return NextResponse.next();
+}
+
+// Define which routes the middleware should protect
+// Exclude API routes, static Next.js files, and our public image folder
+export const config = {
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|img).*)"],
+};
