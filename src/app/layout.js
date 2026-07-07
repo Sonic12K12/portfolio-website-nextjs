@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 
 // Fira Code font configuration (local font)
 const FiraCode = localFont({
-  
   src: [
     {
       path: "./fonts/FiraCode-Regular.ttf",
@@ -19,9 +18,7 @@ const FiraCode = localFont({
 
   variable: "--font-fira-code",
   display: "swap",
-
 });
-
 
 // Global metadata for the application
 export const metadata = {
@@ -38,9 +35,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${FiraCode.variable} font-sans antialiased bg-background`}>
+      <body
+        className={`${FiraCode.variable} font-sans antialiased bg-background`}
+      >
         {children}
-        </body>
+      </body>
     </html>
   );
 }
