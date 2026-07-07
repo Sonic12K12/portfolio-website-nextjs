@@ -16,7 +16,7 @@ const projects = [
   {
     id: 3,
     title: "Drittes Projekt",
-    description: "Eine weiter Beschreibung.",
+    description: "Eine weitere Beschreibung.",
     imageUrl: "/img/placeholder.jpg",
   },
 ];
