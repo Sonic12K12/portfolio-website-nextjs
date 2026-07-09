@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import Footer from "../components/Footer";
 
 // Fira Code font configuration (local font)
 const FiraCode = localFont({
@@ -40,6 +41,8 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+      {/* Footer component */}
+      <Footer />
     </html>
   );
 }
