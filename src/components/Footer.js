@@ -14,11 +14,19 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-center gap-8 mt-4">
-        <a href="https://github.com/Sonic12K12">
+        <a
+          href="https://github.com/Sonic12K12"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub size={26} />
         </a>
 
-        <a href="https://www.linkedin.com/in/konstantin-schiwarov/">
+        <a
+          href="https://www.linkedin.com/in/konstantin-schiwarov/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin size={26} />
         </a>
       </div>
