@@ -40,9 +40,9 @@ export default function RootLayout({ children }) {
         className={`${FiraCode.variable} font-sans antialiased bg-background`}
       >
         {children}
+        {/* Footer component */}
+        <Footer />
       </body>
-      {/* Footer component */}
-      <Footer />
     </html>
   );
 }
