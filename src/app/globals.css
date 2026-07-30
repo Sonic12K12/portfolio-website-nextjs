@@ -8,3 +8,19 @@
   --color-background: rgb(30 30 30);
   --color-muted: rgb(75 75 75);
 }
+
+/* Update your keyframes in global.css */
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 120s linear infinite;
+  }
+}
