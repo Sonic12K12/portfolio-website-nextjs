@@ -3,9 +3,15 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Erstes HTW Projekt",
-    description: "Hier kommt eine kurze Beschreibung hin.",
-    imageUrl: "/img/placeholder.jpg",
+    title: "Urban Bio Space Simulator",
+    description: (
+      <>
+        A serious mobile game developed with <em>food4future</em> that simulates
+        sustainable food production and resource management in densely populated
+        urban environments.
+      </>
+    ),
+    imageUrl: "/img/ubss_preview_image.jpg",
   },
   {
     id: 2,
