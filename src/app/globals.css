@@ -9,7 +9,7 @@
   --color-muted: rgb(75 75 75);
 }
 
-/* Update your keyframes in global.css */
+/* WipBanner animation */
 @layer utilities {
   @keyframes marquee {
     0% {
