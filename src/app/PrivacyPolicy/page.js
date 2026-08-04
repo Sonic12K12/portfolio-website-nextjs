@@ -406,7 +406,7 @@ export default function PrivacyPolicy() {
         <p>
           Konstantin Schiwarov
           <br />
-          k.schiwarov@gmail.com
+          {process.env.NEXT_PUBLIC_EMAIL}
         </p>
 
         <h2>Changes to our Privacy Policy</h2>
