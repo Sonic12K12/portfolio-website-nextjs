@@ -32,7 +32,7 @@ export default function Home() {
   return (
     // The dark wrapper for the whole page
     <main className="min-h-screen bg-- text-white p-10 w-3/4 mx-auto">
-      <h1 className="text-6xl text-primary font-bold mb-20 text-center">
+      <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mb-20 text-center">
         Projects
       </h1>
       {projects.map((project) => {
