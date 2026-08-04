@@ -24,3 +24,12 @@
     animation: marquee 120s linear infinite;
   }
 }
+
+/* Add this temporarily to the bottom of your global CSS file */
+* {
+  /* Highlights every single element on the page with a red border */
+  outline: 1px solid red !important;
+
+  /* Optional: Adds a very light red background to make overlapping containers visible */
+  background: rgba(255, 0, 0, 0.05) !important;
+}
