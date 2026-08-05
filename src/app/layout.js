@@ -1,7 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "../components/Footer";
-import BannerWip from "@/components/WipBanner";
 import WipBanner from "@/components/WipBanner";
 
 // Fira Code font configuration (local font)
