@@ -11,14 +11,14 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold mb-5 text-white">About me</h1>
 
         {/* Introduction text */}
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-16 leading-relaxed">
           Hi, I&apos;m Konstantin, an International Media and Computing student
-          at HTW Berlin with a strong interest in modern web development. While
-          my main focus lies in frontend engineering, I also bring a solid
-          foundation in Java and a keen interest in 3D design. I am currently
-          looking for a mandatory international internship where I can
-          contribute my skill set to real-world projects and continue growing as
-          a developer.
+          at HTW Berlin with a strong interest in modern web development. <br />
+          While my main focus lies in frontend engineering, I also bring a solid
+          foundation in Java and a keen interest in 3D design.
+          <br /> I am currently looking for a mandatory internship abroad where
+          I can contribute my skill set to real-world projects and continue
+          growing as a developer.
         </p>
 
         {/* Contact & Links Section */}
@@ -29,7 +29,7 @@ export default function AboutPage() {
 
           {/* 3-Column Grid for Contact Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-            {/* Email Card using lucide-react */}
+            {/* Email Card lucide-react */}
             <a
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
               className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
@@ -40,9 +40,9 @@ export default function AboutPage() {
               </span>
             </a>
 
-            {/* LinkedIn Card using react-icons */}
+            {/* LinkedIn Card react-icons */}
             <a
-              href="https://linkedin.com/in/dein-profil"
+              href="https://www.linkedin.com/in/konstantin-schiwarov/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
@@ -53,9 +53,9 @@ export default function AboutPage() {
               </span>
             </a>
 
-            {/* GitHub Card using react-icons */}
+            {/* GitHub Card react-icons */}
             <a
-              href="https://github.com/dein-username"
+              href="https://github.com/Sonic12K12"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
@@ -67,17 +67,20 @@ export default function AboutPage() {
             </a>
           </div>
 
-          {/* Full-width CV Banner using lucide-react */}
+          {/*
+           Full-width CV Banner lucide-react 
           <a
-            href="/cv-konstantin.pdf"
-            download
-            className="flex items-center justify-center w-full p-4 bg-blue-900/20 border border-blue-500/30 rounded-xl hover:bg-blue-900/40 hover:border-blue-500/60 transition-all group"
+            href="/CV_Konstantin_Schiwarov_2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
           >
-            <Download className="w-5 h-5 mr-3 text-blue-400 group-hover:scale-110 transition-transform" />
-            <span className="font-semibold text-blue-400">
-              Download CV (PDF)
+            <Download className="w-8 h-8 mb-3 text-gray-400 group-hover:text-white transition-colors" />
+            <span className="font-medium text-gray-300 group-hover:text-white">
+              Download CV
             </span>
           </a>
+          */}
         </section>
       </div>
     </main>
