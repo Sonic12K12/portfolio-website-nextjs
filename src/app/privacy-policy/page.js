@@ -1,7 +1,8 @@
 export default function PrivacyPolicy() {
   return (
-    <div id="generator_results">
-      <div id="generator_results_content">
+    // All standard HTML tags inside will now be styled automatically
+    <main className="prose prose-invert max-w-none p-10 w-3/4 mx-auto">
+      <div>
         <h1>Privacy Policy</h1>
         <h2>Data Controller</h2>
         <p>
@@ -439,6 +440,6 @@ export default function PrivacyPolicy() {
           </em>
         </p>
       </div>
-    </div>
+    </main>
   );
 }
