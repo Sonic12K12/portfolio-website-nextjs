@@ -1,3 +1,3 @@
-export default function UBSS_Page() {
+export default function UBSSPage() {
   return;
 }
