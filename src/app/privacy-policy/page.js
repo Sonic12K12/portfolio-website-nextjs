@@ -1,7 +1,7 @@
 export default function PrivacyPolicy() {
   return (
     // All standard HTML tags inside will now be styled automatically
-    <main className="prose prose-invert max-w-none p-10 w-3/4 mx-auto">
+    <main className="prose prose-invert max-w-3xl mx-auto px-6 py-12">
       <div>
         <h1>Privacy Policy</h1>
         <h2>Data Controller</h2>

@@ -31,7 +31,7 @@ const projects = [
 export default function Home() {
   return (
     // The dark wrapper for the whole page
-    <main className="min-h-screen bg-- text-white p-10 w-3/4 mx-auto">
+    <main className="max-w-3xl mx-auto px-6 py-12">
       <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mb-20 text-center">
         Projects
       </h1>
