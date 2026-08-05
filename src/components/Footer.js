@@ -21,10 +21,10 @@ export default function Footer() {
           Privacy Policy
         </a>
         <a
-          href="/contact"
+          href="/about"
           className="transitiona-all duration-300 hover:text-primary hover:scale-105"
         >
-          Contact
+          About
         </a>
       </div>
 
