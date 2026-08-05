@@ -7,22 +7,22 @@ export default function Footer() {
   return (
     <footer className="text-muted py-8">
       <hr className="border-t border-muted w-11/12 mx-auto my-8" />
-      <div className="flex justify-center gap-12 w-full px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 w-full px-4">
         <a
           href="/imprint"
-          className="transitiona-all duration-300 hover:text-primary hover:scale-105"
+          className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           Imprint
         </a>
         <a
           href="/privacy-policy"
-          className="transitiona-all duration-300 hover:text-primary hover:scale-105"
+          className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           Privacy Policy
         </a>
         <a
           href="/about"
-          className="transitiona-all duration-300 hover:text-primary hover:scale-105"
+          className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           About
         </a>
@@ -33,7 +33,7 @@ export default function Footer() {
           href="https://github.com/Sonic12K12"
           target="_blank"
           rel="noopener noreferrer"
-          className="transitiona-all duration-300 hover:text-primary"
+          className="transition-all duration-300 hover:text-primary"
         >
           <FaGithub size={26} />
         </a>
@@ -42,7 +42,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/konstantin-schiwarov/"
           target="_blank"
           rel="noopener noreferrer"
-          className="transitiona-all duration-300 hover:text-primary"
+          className="transition-all duration-300 hover:text-primary"
         >
           <FaLinkedin size={26} />
         </a>
