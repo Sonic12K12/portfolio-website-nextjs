@@ -1,4 +1,4 @@
-export default function ImprintPage() {
+export default function LegalNoticePage() {
   return (
     // Wrapper with Tailwind typography classes
     <main className="prose prose-invert max-w-3xl mx-auto px-6 py-12">
