@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -8,44 +9,44 @@ export default function Footer() {
     <footer className="text-muted py-8">
       <hr className="border-t border-muted w-11/12 mx-auto my-8" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 w-full px-4">
-        <a
+        <Link
           href="/legal-notice"
           className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           Legal Notice
-        </a>
-        <a
+        </Link>
+        <Link
           href="/about"
           className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           href="/privacy-policy"
           className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           Privacy Policy
-        </a>
+        </Link>
       </div>
 
       <div className="flex justify-center gap-8 mt-4">
-        <a
+        <Link
           href="https://github.com/Sonic12K12"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-primary"
         >
           <FaGithub size={26} />
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://www.linkedin.com/in/konstantin-schiwarov/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-all duration-300 hover:text-primary"
         >
           <FaLinkedin size={26} />
-        </a>
+        </Link>
       </div>
 
       <div className="text-center mt-4 text-sm">
