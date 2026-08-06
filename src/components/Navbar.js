@@ -1,7 +1,19 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  // Define routes where the banner should not render
+  const hiddenRoutes = ["/login"];
+
+  // Hide the component completely on blacklisted routes
+  if (hiddenRoutes.includes(pathname)) {
+    return null;
+  }
   return (
     <nav>
       <div>
