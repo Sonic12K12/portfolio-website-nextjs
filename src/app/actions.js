@@ -8,11 +8,11 @@ import { redirect } from "next/navigation";
 export async function authenticate(formData) {
   const password = formData.get("password");
 
-  // Fetch the password safely from the environment variables
+  // Fetch the password from the environment variables
   const EXPECTED_PASS = process.env.PORTFOLIO_PASS;
 
   if (password === EXPECTED_PASS) {
-    // Await the cookies() promise before using it (required in Next.js 15+)
+    // Await the cookies() promise before using it
     const cookieStore = await cookies();
 
     // Password is correct, set the cookie
