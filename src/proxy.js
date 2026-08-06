@@ -1,4 +1,3 @@
-// proxy.js
 import { NextResponse } from "next/server";
 
 // Proxy function to protect routes
