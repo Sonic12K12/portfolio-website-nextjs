@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -5,6 +8,15 @@ import { FaLinkedin } from "react-icons/fa";
 const currentYear = new Date().getFullYear();
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Define routes where the banner should not render
+  const hiddenRoutes = ["/login"];
+
+  // Hide the component completely on blacklisted routes
+  if (hiddenRoutes.includes(pathname)) {
+    return null;
+  }
   return (
     <footer className="text-muted py-8">
       <hr className="border-t border-muted w-11/12 mx-auto my-8" />
