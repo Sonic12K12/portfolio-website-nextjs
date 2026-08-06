@@ -1,8 +1,6 @@
-// Marks this file as a Client Component in Next.js
 "use client";
 
 import { usePathname } from "next/navigation";
-import React from "react";
 
 const BANNER_TEXT = "Work in Progress — Portfolio currently under construction";
 
