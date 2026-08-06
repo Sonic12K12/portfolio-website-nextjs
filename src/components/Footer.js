@@ -9,22 +9,22 @@ export default function Footer() {
       <hr className="border-t border-muted w-11/12 mx-auto my-8" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 w-full px-4">
         <a
-          href="/imprint"
+          href="/legal-notice"
           className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
-          Imprint
-        </a>
-        <a
-          href="/privacy-policy"
-          className="transition-all duration-300 hover:text-primary hover:scale-105"
-        >
-          Privacy Policy
+          Legal Notice
         </a>
         <a
           href="/about"
           className="transition-all duration-300 hover:text-primary hover:scale-105"
         >
           About
+        </a>
+        <a
+          href="/privacy-policy"
+          className="transition-all duration-300 hover:text-primary hover:scale-105"
+        >
+          Privacy Policy
         </a>
       </div>
 
