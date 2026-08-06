@@ -2,6 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "../components/Footer";
 import WipBanner from "@/components/WipBanner";
+import Navbar from "@/components/Navbar";
 
 // Fira Code font configuration (local font)
 const FiraCode = localFont({
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         className={`${FiraCode.variable} font-sans antialiased bg-background`}
       >
         <WipBanner />
+        <Navbar />
         {children}
         {/* Footer component */}
         <Footer />
