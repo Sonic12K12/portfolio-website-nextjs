@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <WipBanner />
         <Navbar />
         {children}
-        {/* Footer component */}
+        <Analytics />
         <Footer />
       </body>
     </html>
