@@ -198,12 +198,11 @@ export default function PrivacyPolicy() {
         <h4>Nature and Purpose of Processing</h4>
         <p>
           Audience measurement serves to evaluate the flow of visitors to our
-          online offering and can include behavior, interests, or demographic
-          information about visitors, such as age or gender, as pseudonymous
-          values. With the help of reach analysis, we can identify, for example,
-          at what time our online offering or its functions or content are most
-          frequently used or invite reuse. We can also understand which areas
-          need adaptation.
+          online offering and can include behavior or technical information
+          about visitors as pseudonymous values. With the help of reach
+          analysis, we can identify, for example, at what time our online
+          offering or its functions or content are most frequently used or
+          invite reuse. We can also understand which areas need adaptation.
         </p>
         <p>
           You can find out which tools we use for audience measurement below.
@@ -255,6 +254,15 @@ export default function PrivacyPolicy() {
           We use Vercel Web Analytics (Vercel Inc., USA) for anonymized,
           cookie-free audience measurement. Only general statistical data (such
           as page views) is recorded, without identifying or tracking individual
+          website visitors.
+        </p>
+        <h5>Vercel Speed Insights</h5>
+        <p>
+          We use Vercel Speed Insights (Vercel Inc., USA) to measure and
+          evaluate the technical performance and loading times of our website.
+          This data helps us to continuously optimize the user experience. The
+          measurement is completely cookie-free and all performance metrics are
+          processed anonymously, without identifying or tracking individual
           website visitors.
         </p>
 
