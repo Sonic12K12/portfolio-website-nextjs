@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Footer from "../components/Footer";
 import WipBanner from "@/components/WipBanner";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 // Fira Code font configuration (local font)
 const FiraCode = localFont({
