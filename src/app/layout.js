@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import WipBanner from "@/components/WipBanner";
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Fira Code font configuration (local font)
 const FiraCode = localFont({
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
