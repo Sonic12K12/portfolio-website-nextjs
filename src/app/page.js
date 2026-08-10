@@ -1,3 +1,9 @@
+import StarBackground from "../components/StarBackground";
+
 export default function Home() {
-  return;
+  return (
+    <div>
+      <StarBackground />
+    </div>
+  );
 }
