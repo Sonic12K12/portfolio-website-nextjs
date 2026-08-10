@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link href="/about">About</Link>
         </li>
       </ul>
-      <ul className="flex items-center gap-10 ml-auto">
+      <ul className="hidden md:flex items-center gap-10 ml-auto">
         <li>
           <Link
             href="https://github.com/Sonic12K12"
