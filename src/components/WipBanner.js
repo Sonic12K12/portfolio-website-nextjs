@@ -35,7 +35,7 @@ export default function WipBanner() {
   }
 
   return (
-    <div className="w-full overflow-hidden bg-yellow-400 py-0.5 text-black">
+    <div className="w-full overflow-hidden bg-yellow-400 text-black">
       {/* Inner container: holds exactly 2 identical TextBlocks for the seamless 50% loop */}
       <div className="flex w-max animate-marquee whitespace-nowrap">
         <TextBlock />

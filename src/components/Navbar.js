@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import WipBanner from "./WipBanner";
 
 export default function Navbar() {
   const currentPath = usePathname();
@@ -17,46 +18,54 @@ export default function Navbar() {
     return null;
   }
   return (
-    <nav className="top-0 w-full z-50 flex items-center px-8 gap-10 bg-black/40 border-b border-white/10 text-text-main">
-      <div>
-        <Link href="/">
-          <Image src="/img/placeholder.jpg" alt="icon" width={60} height={60} />
-        </Link>
-      </div>
-      <ul className="flex items-center">
-        <li
-          className={`py-4 px-4 transition-all duration-300 ${currentPath === "/projects" ? "bg-white/10" : ""} ${currentPath === "/projects" ? "" : "hover:text-primary hover:scale-105"}`}
-        >
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li
-          className={`py-4 px-4 transition-all duration-300 ${currentPath === "/about" ? "bg-white/10" : ""} ${currentPath === "/about" ? "" : "hover:text-primary hover:scale-105"}`}
-        >
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
-      <ul className="hidden md:flex items-center gap-10 ml-auto">
-        <li>
-          <Link
-            href="https://github.com/Sonic12K12"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-all duration-300 hover:text-primary"
-          >
-            <FaGithub size={26} />
+    <div className="fixed top-0 w-full z-50 flex flex-col">
+      <WipBanner />
+      <nav className="top-0 w-full z-50 flex items-center px-8 gap-10 bg-black/40 border-b border-white/10 text-text-main">
+        <div>
+          <Link href="/">
+            <Image
+              src="/img/placeholder.jpg"
+              alt="icon"
+              width={60}
+              height={60}
+            />
           </Link>
-        </li>
-        <li>
-          <Link
-            href="https://www.linkedin.com/in/konstantin-schiwarov/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-all duration-300 hover:text-primary"
+        </div>
+        <ul className="flex items-center">
+          <li
+            className={`py-2 px-5 rounded-full transition-all duration-300 ${currentPath === "/projects" ? "bg-white/10" : ""} ${currentPath === "/projects" ? "" : "hover:text-primary hover:scale-105"}`}
           >
-            <FaLinkedin size={26} />
-          </Link>
-        </li>
-      </ul>
-    </nav>
+            <Link href="/projects">Projects</Link>
+          </li>
+          <li
+            className={`py-2 px-5 rounded-full transition-all duration-300 ${currentPath === "/about" ? "bg-white/10" : ""} ${currentPath === "/about" ? "" : "hover:text-primary hover:scale-105"}`}
+          >
+            <Link href="/about">About</Link>
+          </li>
+        </ul>
+        <ul className="hidden md:flex items-center gap-10 ml-auto">
+          <li>
+            <Link
+              href="https://github.com/Sonic12K12"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all duration-300 hover:text-primary"
+            >
+              <FaGithub size={26} />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://www.linkedin.com/in/konstantin-schiwarov/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all duration-300 hover:text-primary"
+            >
+              <FaLinkedin size={26} />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
