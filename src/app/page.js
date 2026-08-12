@@ -8,7 +8,7 @@ export default function Home() {
         Hi, I&apos;m Konstantin.
       </h1>
       <p className="text-text-main text-lg md:text-xl max-w-2xl text-center">
-        With a strong foundation in Java from my Media Informatics studies,
+        With a strong foundation in Java from my Media and Computing studies,
         I&apos;m currently diving deep into modern web development. I also have
         a creative soft spot for 3D design.
       </p>
