@@ -41,9 +41,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-sans antialiased bg-background`}
+        className={`${FiraCode.variable} font-sans antialiased bg-background pt-28 min-h-screen`}
       >
-        <WipBanner />
         <Navbar />
         {children}
         <Analytics />
