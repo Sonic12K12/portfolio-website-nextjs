@@ -57,7 +57,7 @@ export default function ProjectPage() {
               <h2 className="text-3xl font-bold text-primary mb-4">
                 {project.title}
               </h2>
-              <p className="text-zinc-400 text-lg">{project.description}</p>
+              <p className="text-text-main text-lg">{project.description}</p>
             </div>
           </div>
         );

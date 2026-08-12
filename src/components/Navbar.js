@@ -17,7 +17,7 @@ export default function Navbar() {
     return null;
   }
   return (
-    <nav className="top-0 w-full z-50 flex items-center px-8 gap-10 bg-black/40 border-b border-white/10 text-gray-400">
+    <nav className="top-0 w-full z-50 flex items-center px-8 gap-10 bg-black/40 border-b border-white/10 text-text-main">
       <div>
         <Link href="/">
           <Image src="/img/placeholder.jpg" alt="icon" width={60} height={60} />
