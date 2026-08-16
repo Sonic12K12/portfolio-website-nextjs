@@ -20,18 +20,16 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 w-full z-50 flex flex-col">
       <WipBanner />
-      <nav className="top-0 w-full z-50 flex items-center px-8 gap-10 bg-black/40 border-b border-white/10 text-text-main">
+      <nav className="top-0 w-full z-50 flex items-center px-8 gap-2 bg-black/40 border-b border-white/10 text-text-main">
         <div>
-          <Link href="/">
-            <Image
-              src="/img/placeholder.jpg"
-              alt="icon"
-              width={60}
-              height={60}
-            />
+          <Link
+            href="/"
+            className={`font-bold text-xl ${currentPath === "/" ? "" : "text-primary"}`}
+          >
+            {"<Konstantin>"}
           </Link>
         </div>
-        <ul className="flex items-center">
+        <ul className="flex items-center border-2 border-white/10 rounded-full mx-6 my-3 px-3">
           <li
             className={`py-2 px-5 duration-300 ${currentPath === "/projects" ? "text-primary" : ""} ${currentPath === "/projects" ? "" : "hover:text-primary hover:scale-105"}`}
           >
