@@ -16,9 +16,20 @@ export default function Home() {
         <Link href="/projects">
           <button
             type="button"
-            className="bg-primary text-3xl rounded-2xl py-8 px-10 mt-8 border-none shadow-xl cursor-pointer text-black"
+            className="bg-primary text-2xl rounded-2xl py-8 px-10 mt-8 border-none shadow-xl cursor-pointer text-background group relative flex items-center justify-center overflow-hidden"
           >
-            <span className="[font-variant-ligatures:none]">{"-->"}</span>
+            {/* Invisible placeholder to maintain button dimensions */}
+            <span className="invisible font-bold">My Projects</span>
+
+            {/* Primary text: Starts centered, slides to the right out of screen on hover */}
+            <span className="absolute transition-transform duration-500 ease-in-out group-hover:translate-x-72 font-bold">
+              My Projects
+            </span>
+
+            {/* Arrow: Starts left out of screen, slides right into center on hover */}
+            <span className="absolute -translate-x-44 transition-transform duration-500 ease-in-out group-hover:translate-x-0 [font-variant-ligatures:none]">
+              {"-->"}
+            </span>
           </button>
         </Link>
       </div>
