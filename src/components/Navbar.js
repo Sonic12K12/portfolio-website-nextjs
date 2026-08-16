@@ -33,12 +33,12 @@ export default function Navbar() {
         </div>
         <ul className="flex items-center">
           <li
-            className={`py-2 px-5 rounded-full transition-all duration-300 ${currentPath === "/projects" ? "bg-white/10" : ""} ${currentPath === "/projects" ? "" : "hover:text-primary hover:scale-105"}`}
+            className={`py-2 px-5 duration-300 ${currentPath === "/projects" ? "text-primary" : ""} ${currentPath === "/projects" ? "" : "hover:text-primary hover:scale-105"}`}
           >
             <Link href="/projects">Projects</Link>
           </li>
           <li
-            className={`py-2 px-5 rounded-full transition-all duration-300 ${currentPath === "/about" ? "bg-white/10" : ""} ${currentPath === "/about" ? "" : "hover:text-primary hover:scale-105"}`}
+            className={`py-2 px-5 duration-300 ${currentPath === "/about" ? "text-primary" : ""} ${currentPath === "/about" ? "" : "hover:text-primary hover:scale-105"}`}
           >
             <Link href="/about">About</Link>
           </li>
