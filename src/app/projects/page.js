@@ -11,7 +11,7 @@ const projects = [
         urban environments.
       </>
     ),
-    imageUrl: "/img/ubss_preview_image.jpg",
+    imageUrl: "/img/ubss_preview_image.webp",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     title: "Drittes Projekt",
     description: "Eine weitere Beschreibung.",
-    imageUrl: "/img/placeholder.jpg",
+    imageUrl: "/img/typewriterFinalRender.webp",
   },
 ];
 
