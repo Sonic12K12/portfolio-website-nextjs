@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 // Projects data array
 const projects = [
   {
@@ -12,18 +13,21 @@ const projects = [
       </>
     ),
     imageUrl: "/img/ubss_preview_image.webp",
+    url: "/ubss",
   },
   {
     id: 2,
     title: "Zweites Projekt",
     description: "Noch eine Beschreibung.",
     imageUrl: "/img/placeholder.jpg",
+    url: "",
   },
   {
     id: 3,
     title: "Drittes Projekt",
     description: "Eine weitere Beschreibung.",
     imageUrl: "/img/typewriterFinalRender.webp",
+    url: "",
   },
 ];
 
@@ -32,14 +36,15 @@ export default function ProjectPage() {
   return (
     // The dark wrapper for the whole page
     <main className="max-w-3xl mx-auto px-6 lg:max-w-5xl">
-      <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mb-20 text-center">
+      <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mt-8 mb-16 text-center">
         Projects
       </h1>
       {projects.map((project) => {
         return (
-          <div
+          <Link
+            href={project.url}
             key={project.id}
-            className="group flex flex-col md:flex-row items-center gap-12 mb-12 p-8 rounded-3xl hover:bg-black/10 hover:drop-shadow-lg duration-300"
+            className="group flex flex-col md:flex-row items-center gap-12 mb-8 p-8 rounded-3xl hover:bg-black/10 hover:drop-shadow-lg duration-300"
           >
             <div className="w-full md:w-1/2">
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-zinc-800">
@@ -59,7 +64,7 @@ export default function ProjectPage() {
               </h2>
               <p className="text-text-main text-lg">{project.description}</p>
             </div>
-          </div>
+          </Link>
         );
       })}
     </main>
