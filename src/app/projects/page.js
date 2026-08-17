@@ -39,7 +39,7 @@ export default function ProjectPage() {
         return (
           <div
             key={project.id}
-            className="flex flex-col md:flex-row items-center gap-12 mb-20"
+            className="group flex flex-col md:flex-row items-center gap-12 mb-12 p-8 rounded-3xl hover:bg-black/10 hover:drop-shadow-lg duration-300"
           >
             <div className="w-full md:w-1/2">
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-zinc-800">
@@ -47,7 +47,7 @@ export default function ProjectPage() {
                   src={project.imageUrl}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
