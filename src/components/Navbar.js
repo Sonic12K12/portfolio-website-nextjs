@@ -24,7 +24,7 @@ export default function Navbar() {
         <div>
           <Link
             href="/"
-            className={`hidden md:font-bold text-xl ${currentPath === "/" ? "" : "text-primary"}`}
+            className={`hidden md:block font-bold text-xl ${currentPath === "/" ? "" : "text-primary"}`}
           >
             {"<Konstantin>"}
           </Link>
