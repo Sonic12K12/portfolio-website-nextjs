@@ -1,8 +1,8 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "../components/Footer";
-import WipBanner from "@/components/WipBanner";
 import Navbar from "@/components/Navbar";
+import MainPaddingWrapper from "@/components/MainPaddingWrapper";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -41,10 +41,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-sans antialiased bg-background pt-28 min-h-screen`}
+        className={`${FiraCode.variable} font-sans antialiased bg-background min-h-screen`}
       >
         <Navbar />
-        {children}
+
+        {/* Moved pt-28 here (MainPaddingWrapper) to conditionally remove it on the /login route. */}
+        <MainPaddingWrapper>{children}</MainPaddingWrapper>
         <Analytics />
         <SpeedInsights />
         <Footer />
