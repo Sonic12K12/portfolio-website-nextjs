@@ -44,7 +44,7 @@ export default function ProjectPage() {
           <Link
             href={project.url}
             key={project.id}
-            className="group flex flex-col md:flex-row items-center gap-12 mb-8 p-8 rounded-3xl hover:bg-black/10 hover:drop-shadow-lg duration-300"
+            className="group flex flex-col md:flex-row items-center gap-12 mb-8 p-8 rounded-3xl border border-transparent hover:border-white/5 hover:bg-white/5 hover:drop-shadow-lg transition-all duration-300"
           >
             <div className="w-full md:w-1/2">
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-zinc-800">
