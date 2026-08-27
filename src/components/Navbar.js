@@ -19,7 +19,9 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 w-full z-50 flex flex-col">
       <WipBanner />
-      <nav className="top-0 w-full z-50 flex items-center px-8 gap-2 bg-black/40 border-b border-white/10 text-text-main">
+      <nav
+        className={`top-0 w-full z-50 flex items-center px-8 gap-2 bg-black/40 border-b border-white/10 text-text-main ${currentPath === "/" ? "" : "bg-zinc-950"}`}
+      >
         <div>
           <Link
             href="/"
