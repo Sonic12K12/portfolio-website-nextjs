@@ -5,25 +5,46 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen text-gray-300">
+    <main className="min-h-screen text-text-main">
       {/* Wrapper to control max width and center the content */}
       <div className="max-w-3xl mx-auto px-6 py-12">
-        <h1 className="text-4xl font-bold mb-5 text-white">About me</h1>
+        <h1 className="w-full text-4xl font-bold mb-12 text-center text-primary">
+          About me
+        </h1>
 
-        {/* Introduction text */}
         <p className="mb-16 leading-relaxed">
-          Hi, I&apos;m Konstantin, an International Media and Computing student
-          at HTW Berlin with a strong interest in modern web development. <br />
-          While my main focus lies in frontend engineering, I also bring a solid
-          foundation in Java and a keen interest in 3D design.
-          <br /> I am currently looking for a mandatory internship abroad where
-          I can contribute my skill set to real-world projects and continue
-          growing as a developer.
+          Hi, I&apos;m Konstantin, currently in the final stages of my
+          International Media and Computing degree at HTW Berlin. While my
+          studies gave me a robust foundation in Java, my absolute focus right
+          now is modern frontend engineering. I&apos;m fascinated by web
+          technologies because they are borderless. I love the idea of building
+          digital experiences that anyone can access from anywhere, at any time.
+          Even though code is my main focus, whenever a project calls for some
+          3D modeling or video editing, I&apos;m always the first to volunteer.
+          <br /> Currently, I&apos;m seeking a mandatory internship abroad to
+          turn my passion for modern web technologies into real-world impact and
+          keep growing as a developer.
+        </p>
+
+        <h2 className="text-2xl font-bold mb-6 text-center text-primary">
+          Beyond the Code
+        </h2>
+        <p className="mb-16 leading-relaxed">
+          While I love building things in the browser, I also have a massive
+          soft spot for the hardware side of things. I&apos;m definitely a
+          gadget guy and have a big interest in the newest tech in general. I
+          actually got my Amateur Radio License out of pure curiosity, though
+          I&apos;ll admit I haven&apos;t really used it since (whoops!).
+          <br /> Whether I&apos;m upgrading my camera rig for photography,
+          optimizing my PC setup for gaming, or dialing in the exact right
+          espresso shot, I just enjoy complex setups and good gear. When I need
+          a break from screens and gadgets, you&apos;ll usually find me staying
+          active through strength training and badminton.
         </p>
 
         {/* Contact & Links Section */}
         <section>
-          <h2 className="text-2xl font-bold mb-6 text-white">
+          <h2 className="text-2xl font-bold mb-6 text-center text-primary">
             Contact & Links
           </h2>
 
@@ -32,7 +53,7 @@ export default function AboutPage() {
             {/* Email Card lucide-react */}
             <a
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
+              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-primary hover:bg-zinc-800 transition-all group"
             >
               <Mail className="w-8 h-8 mb-3 text-gray-400 group-hover:text-white transition-colors" />
               <span className="font-medium text-gray-300 group-hover:text-white">
@@ -45,7 +66,7 @@ export default function AboutPage() {
               href="https://www.linkedin.com/in/konstantin-schiwarov/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
+              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-primary hover:bg-zinc-800 transition-all group"
             >
               <FaLinkedin className="w-8 h-8 mb-3 text-gray-400 group-hover:text-white transition-colors" />
               <span className="font-medium text-gray-300 group-hover:text-white">
@@ -58,7 +79,7 @@ export default function AboutPage() {
               href="https://github.com/Sonic12K12"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-500 hover:bg-zinc-800 transition-all group"
+              className="flex flex-col items-center p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-primary hover:bg-zinc-800 transition-all group"
             >
               <FaGithub className="w-8 h-8 mb-3 text-gray-400 group-hover:text-white transition-colors" />
               <span className="font-medium text-gray-300 group-hover:text-white">
