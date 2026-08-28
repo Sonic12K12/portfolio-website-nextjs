@@ -7,10 +7,11 @@ export default function Home() {
       <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mb-10 text-center">
         Hi, I&apos;m Konstantin.
       </h1>
-      <p className="text-text-main text-lg md:text-xl max-w-2xl text-center">
-        My background in Media and Computing at HTW Berlin gave me a solid
-        foundation in Java. Now, I&apos;m fully focused on diving into modern
-        web development.
+      <p className="text-text-main text-lg md:text-xl max-w-3xl text-center">
+        I&apos;m a Media and Computing student at HTW Berlin.
+        <br /> Currently exploring the modern frontend ecosystem with React and
+        Next.js to build interactive web apps, backed by a solid software
+        engineering foundation in Java.
       </p>
       <div>
         <Link

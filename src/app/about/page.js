@@ -21,9 +21,11 @@ export default function AboutPage() {
           digital experiences that anyone can access from anywhere, at any time.
           Even though code is my main focus, whenever a project calls for some
           3D modeling or video editing, I&apos;m always the first to volunteer.
-          <br /> Currently, I&apos;m seeking a mandatory internship abroad to
-          turn my passion for modern web technologies into real-world impact and
-          keep growing as a developer.
+          <br /> Currently, my priority is finding a working student position to
+          gain
+          <br /> hands-on experience. Parallel to that, I&apos;m keeping an eye
+          out for opportunities regarding my upcoming mandatory internship
+          abroad.
         </p>
 
         <h2 className="text-2xl font-bold mb-6 text-center text-primary">
