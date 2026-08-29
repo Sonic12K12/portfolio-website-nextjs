@@ -62,10 +62,12 @@ export default function Footer() {
       </div>
 
       <div className="text-center mt-4 text-sm">
-        <p className="mb-2">
+        <p className="mb-2 text-muted">
           &copy; {currentYear} Konstantin Schiwarov. All rights reserved.
         </p>
-        <p>Built with 💜 in Berlin. Powered by Next.js 16 & Tailwind CSS.</p>
+        <p className="text-muted">
+          Built with 💜 in Berlin. Powered by Next.js 16 & Tailwind CSS.
+        </p>
       </div>
     </footer>
   );
