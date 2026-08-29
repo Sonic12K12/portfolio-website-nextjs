@@ -12,6 +12,21 @@
   --color-muted: rgb(75 75 75);
 }
 
+/* Base layer for global HTML tag styling */
+@layer base {
+  h1 {
+    @apply text-4xl font-bold text-primary text-center;
+  }
+
+  h2 {
+    @apply text-2xl font-bold text-primary;
+  }
+
+  p {
+    @apply text-text-main leading-relaxed;
+  }
+}
+
 /* WipBanner animation */
 @layer utilities {
   @keyframes marquee {
