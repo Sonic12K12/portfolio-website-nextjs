@@ -8,10 +8,10 @@ export default function Home() {
         Hi, I&apos;m Konstantin.
       </h1>
       <p className="text-text-main text-lg md:text-xl max-w-3xl text-center">
-        I&apos;m a Media and Computing student at HTW Berlin.
-        <br /> Currently exploring the modern frontend ecosystem with React and
-        Next.js to build interactive web apps, backed by a solid software
-        engineering foundation in Java.
+        I&apos;m a International Media and Computing student at HTW Berlin,
+        currently exploring modern frontend technologies like React and Next.js
+        to build interactive web apps, backed by a solid software engineering
+        foundation in Java.
       </p>
       <div>
         <Link
