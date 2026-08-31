@@ -15,33 +15,34 @@ export default function AboutPage() {
         <p className="mb-16 leading-relaxed">
           Hi, I&apos;m Konstantin, currently in the final stages of my
           International Media and Computing degree at HTW Berlin. While my
-          studies gave me a robust foundation in Java, my absolute focus right
-          now is modern frontend engineering. I&apos;m fascinated by web
+          studies have given me a robust foundation in Java, my focus right now
+          is modern frontend engineering. I&apos;m fascinated by web
           technologies because they are borderless. I love the idea of building
           digital experiences that anyone can access from anywhere, at any time.
           Even though code is my main focus, whenever a project calls for some
           3D modeling or video editing, I&apos;m always the first to volunteer.
-          <br /> Currently, my priority is finding a working student position to
-          gain
-          <br /> hands-on experience. Parallel to that, I&apos;m keeping an eye
-          out for opportunities regarding my upcoming mandatory internship
-          abroad.
+          Currently, my priority is finding a working student position to gain
+          hands&#8209;on experience. Parallel to that, I&apos;m keeping an eye
+          out for opportunities for my upcoming mandatory internship abroad.
         </p>
 
         <h2 className="text-2xl font-bold mb-6 text-center text-primary">
           Beyond the Code
         </h2>
-        <p className="mb-16 leading-relaxed">
+        <p className="leading-relaxed">
           While I love building things in the browser, I also have a massive
           soft spot for the hardware side of things. I&apos;m definitely a
-          gadget guy and have a big interest in the newest tech in general. I
-          actually got my Amateur Radio License out of pure curiosity, though
-          I&apos;ll admit I haven&apos;t really used it since (whoops!).
-          <br /> Whether I&apos;m upgrading my camera rig for photography,
-          optimizing my PC setup for gaming, or dialing in the exact right
-          espresso shot, I just enjoy complex setups and good gear. When I need
-          a break from screens and gadgets, you&apos;ll usually find me staying
-          active through strength training and badminton.
+          gadget guy and have a big interest in the latest tech in general, way
+          beyond just writing code. I actually got my Amateur Radio License out
+          of pure curiosity, though I&apos;ll admit I haven&apos;t really used
+          it since (whoops!).
+        </p>
+        <p className="mb-16 leading-relaxed">
+          Whether I&apos;m upgrading my camera rig for photography, optimizing
+          my PC setup for gaming, or dialing in the perfect espresso shot, I
+          just enjoy complex setups and good gear. When I need a break from
+          screens and gadgets, you&apos;ll usually find me staying active with
+          strength training and badminton.
         </p>
 
         {/* Contact & Links Section */}
