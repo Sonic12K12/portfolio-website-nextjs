@@ -12,7 +12,7 @@ export default function AboutPage() {
           About me
         </h1>
 
-        <p className="mb-16 leading-relaxed">
+        <p className="mb-16">
           Hi, I&apos;m Konstantin, currently in the final stages of my
           International Media and Computing degree at HTW Berlin. While my
           studies have given me a robust foundation in Java, my focus right now
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold mb-6 text-center text-primary">
           Beyond the Code
         </h2>
-        <p className="leading-relaxed">
+        <p>
           While I love building things in the browser, I also have a massive
           soft spot for the hardware side of things. I&apos;m definitely a
           gadget guy and have a big interest in the latest tech in general, way
@@ -37,7 +37,7 @@ export default function AboutPage() {
           of pure curiosity, though I&apos;ll admit I haven&apos;t really used
           it since (whoops!).
         </p>
-        <p className="mb-16 leading-relaxed">
+        <p className="mb-16">
           Whether I&apos;m upgrading my camera rig for photography, optimizing
           my PC setup for gaming, or dialing in the perfect espresso shot, I
           just enjoy complex setups and good gear. When I need a break from
