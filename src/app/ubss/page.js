@@ -195,7 +195,7 @@ export default function UBSSPage() {
         </li>
       </ul>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 mt-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-12">
         <Image
           src="/img/ubss/algae_comp_lowP.webp"
           alt="algae compartment low-poly"
