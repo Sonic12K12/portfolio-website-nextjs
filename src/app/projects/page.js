@@ -12,7 +12,7 @@ const projects = [
         urban environments.
       </>
     ),
-    imageUrl: "/img/ubss_preview_image.webp",
+    imageUrl: "/img/ubss/ubss_preview_image.webp",
     url: "/ubss",
   },
   {
