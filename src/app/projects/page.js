@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 // Projects data array
 const projects = [
   {
@@ -17,16 +18,33 @@ const projects = [
   },
   {
     id: 2,
-    title: "Zweites Projekt",
-    description: "Noch eine Beschreibung.",
-    imageUrl: "/img/placeholder.jpg",
-    url: "",
+    title: "WatchTime",
+    description: (
+      <>
+        A web app build with Next.js to calculate the total runtime of movie
+        franchises and custom movie marathons.
+      </>
+    ),
+    imageUrl: "/img/WatchTime_logo_provisional.webp",
+    url: "/watch-time",
   },
   {
     id: 3,
-    title: "Drittes Projekt",
-    description: "Eine weitere Beschreibung.",
+    title: "IBM Selectric II",
+    description: (
+      <>
+        A photorealistic 3D modell of the legendary Typewriter{" "}
+        <em>IBM Selectric II</em>.
+      </>
+    ),
     imageUrl: "/img/typewriterFinalRender.webp",
+    url: "/3d-design",
+  },
+  {
+    id: 4,
+    title: "Comming Soon",
+    description: <>Next project is comming soon.</>,
+    imageUrl: "/img/placeholder.jpg",
     url: "",
   },
 ];
