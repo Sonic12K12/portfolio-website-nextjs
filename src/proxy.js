@@ -23,7 +23,9 @@ export function proxy(request) {
 }
 
 // Define which routes the proxy should protect
-// Exclude API routes, static Next.js files, and our public image folder
+// Exclude API routes, static Next.js files, public image folder and opengraph image
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|img).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon.ico|img|opengraph-image.jpg).*)",
+  ],
 };
