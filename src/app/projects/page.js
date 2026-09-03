@@ -33,7 +33,7 @@ const projects = [
     title: "IBM Selectric II",
     description: (
       <>
-        A photorealistic 3D modell of the legendary Typewriter{" "}
+        A photorealistic 3D model of the legendary typewriter{" "}
         <em>IBM Selectric II</em>.
       </>
     ),
