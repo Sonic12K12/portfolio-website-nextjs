@@ -37,7 +37,7 @@ const projects = [
         <em>IBM Selectric II</em>.
       </>
     ),
-    imageUrl: "/img/typewriterFinalRender.webp",
+    imageUrl: "/img/3d-design/typewriterFinalRender.webp",
     url: "/3d-design",
   },
   {
