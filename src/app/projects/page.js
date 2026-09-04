@@ -53,8 +53,8 @@ const projects = [
 export default function ProjectPage() {
   return (
     // The dark wrapper for the whole page
-    <main className="max-w-3xl mx-auto px-6 lg:max-w-5xl">
-      <h1 className="w-full text-4xl md:text-6xl text-primary font-bold mt-8 mb-16 text-center">
+    <main className="max-w-3xl mx-auto px-4 lg:max-w-5xl">
+      <h1 className="w-full text-5xl md:text-6xl text-primary font-bold mt-8 mb-16 text-center">
         Projects
       </h1>
       {projects.map((project) => {
@@ -77,10 +77,12 @@ export default function ProjectPage() {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold text-primary mb-4">
+              <h2 className="text-xl lg:text-3xl font-bold text-primary mb-4">
                 {project.title}
               </h2>
-              <p className="text-text-main text-lg">{project.description}</p>
+              <p className="text-md md:text-lg leading-normal md:leading-relaxed">
+                {project.description}
+              </p>
             </div>
           </Link>
         );
