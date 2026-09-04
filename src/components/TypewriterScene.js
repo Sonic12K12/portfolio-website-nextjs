@@ -17,7 +17,7 @@ function Typewriter() {
 export default function TypewriterScene() {
   return (
     // The container needs a defined height and width to render the Canvas
-    <div className="w-full h-100 bg-neutral-900 rounded-xl overflow-hidden cursor-grab active:cursor-grabbing">
+    <div className="w-full h-64 md:h-96 bg-neutral-900 rounded-xl overflow-hidden cursor-grab active:cursor-grabbing">
       <Canvas camera={{ position: [0, 5, 10], fov: 45 }}>
         {/* Suspense prevents crashes while the 3D file is downloading */}
         <Suspense fallback={null}>
