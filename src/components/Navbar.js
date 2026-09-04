@@ -20,14 +20,16 @@ export default function Navbar() {
     <div className="fixed top-0 w-full z-50 flex flex-col">
       <WipBanner />
       <nav
-        className={`top-0 w-full z-50 flex items-center px-8 gap-2 bg-black/40 border-b border-white/10 text-text-main ${currentPath === "/" ? "" : "bg-zinc-950"}`}
+        className={`top-0 w-full z-50 flex items-center px-6 md:px-8 gap-1 md:gap-2 bg-black/40 border-b border-white/10 text-text-main ${currentPath === "/" ? "" : "bg-zinc-950"}`}
       >
         <div>
           <Link
             href="/"
-            className={`hidden md:block font-bold text-xl ${currentPath === "/" ? "" : "text-primary"}`}
+            className={`block font-bold text-3xl md:text-xl ${currentPath === "/" ? "" : "text-primary"}`}
           >
-            {"<Konstantin>"}
+            <span className="md:hidden">{"<K>"}</span>
+
+            <span className="hidden md:inline">{"<Konstantin>"}</span>
           </Link>
         </div>
         <ul className="flex items-center border-2 border-white/10 rounded-full mx-6 my-3 px-3">
