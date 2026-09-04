@@ -1,5 +1,6 @@
 import TypewriterScene from "@/components/TypewriterScene";
 import Image from "next/image";
+import DownloadDialog from "@/components/DownloadDialog";
 
 export default function ThreeDDesignPage() {
   return (
@@ -135,14 +136,7 @@ export default function ThreeDDesignPage() {
           </a>
         </li>
         <li>
-          <a
-            href="/models/typewriter_ibm_selectric_ii.glb"
-            download="ibm_selectric_ii_model.glb"
-            className="underline underline-offset-4 hover:text-primary transition-colors text-text-main w-fit"
-          >
-            3D Model (.glb)
-            <span className="inline-block ml-1.5">↓</span>
-          </a>
+          <DownloadDialog />
         </li>
       </ul>
     </main>
