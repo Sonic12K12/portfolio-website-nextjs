@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ThreeDDesignPage() {
   return (
-    <main className="max-w-3xl mx-auto">
+    <main className="max-w-3xl mx-auto px-4">
       <header>
         <h1 className="mb-12">IBM Selectric II</h1>
       </header>

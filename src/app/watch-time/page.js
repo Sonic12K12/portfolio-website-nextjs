@@ -1,6 +1,6 @@
 export default function WatchTimePage() {
   return (
-    <main>
+    <main className="max-w-3xl mx-auto px-6">
       <header>
         <h1>Comming Soon 🍿</h1>
       </header>
