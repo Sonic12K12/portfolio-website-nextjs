@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
+import { OrbitControls, Stage, useGLTF, Html } from "@react-three/drei";
 import { Suspense } from "react";
 
 // Component to load and render the actual GLB model
@@ -20,7 +20,13 @@ export default function TypewriterScene() {
     <div className="w-full h-64 md:h-96 bg-neutral-900 rounded-xl overflow-hidden cursor-grab active:cursor-grabbing">
       <Canvas camera={{ position: [0, 5, 10], fov: 45 }}>
         {/* Suspense prevents crashes while the 3D file is downloading */}
-        <Suspense fallback={null}>
+        <Suspense
+          fallback={
+            <Html center>
+              <div className="text-gray-400 font-bold">Loading...</div>
+            </Html>
+          }
+        >
           {/* Stage provides automatic studio lighting and centers the model */}
           <Stage environment="city" intensity={0.25}>
             <Typewriter />
