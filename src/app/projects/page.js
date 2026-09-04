@@ -53,7 +53,7 @@ const projects = [
 export default function ProjectPage() {
   return (
     // The dark wrapper for the whole page
-    <main className="max-w-3xl mx-auto px-4 lg:max-w-5xl">
+    <main className="max-w-3xl mx-auto md:px-4 lg:max-w-5xl">
       <h1 className="w-full text-5xl md:text-6xl text-primary font-bold mt-8 mb-16 text-center">
         Projects
       </h1>
@@ -62,7 +62,7 @@ export default function ProjectPage() {
           <Link
             href={project.url}
             key={project.id}
-            className="group flex flex-col md:flex-row items-center gap-12 mb-8 p-8 rounded-3xl border border-transparent hover:border-white/5 hover:bg-white/5 hover:drop-shadow-lg transition-all duration-300"
+            className="group flex flex-col md:flex-row items-center gap-12 mb-8 p-4 md:p-8 rounded-3xl border border-transparent hover:border-white/5 hover:bg-white/5 hover:drop-shadow-lg transition-all duration-300"
           >
             <div className="w-full md:w-1/2">
               <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-zinc-800">
