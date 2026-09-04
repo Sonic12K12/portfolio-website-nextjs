@@ -29,7 +29,7 @@ export default function DownloadDialog() {
 
       <dialog
         ref={dialogRef}
-        className="m-auto p-8 rounded-xl bg-zinc-900 text-white backdrop:bg-black/80"
+        className="m-auto p-8 rounded-xl bg-zinc-900 text-white backdrop:bg-black/80 border border-white/10"
       >
         <h2 className="text-xl font-bold mb-4">Download 3D Model?</h2>
         <p className="mb-6">The file size is around 3MB.</p>
