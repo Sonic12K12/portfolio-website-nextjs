@@ -27,7 +27,7 @@ export default function ThreeDDesignPage() {
 
       <hr className="border-t border-muted w-full my-12 mx-auto" />
 
-      <h2 className="mb-6">Final Render</h2>
+      <h2 className="mb-6">Final Renders</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <Image
