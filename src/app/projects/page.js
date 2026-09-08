@@ -44,7 +44,7 @@ const projects = [
     id: 4,
     title: "Coming Soon",
     description: <>Next project is comming soon.</>,
-    imageUrl: "/img/placeholder.jpg",
+    imageUrl: "/img/placeholder.webp",
     url: "",
   },
 ];
