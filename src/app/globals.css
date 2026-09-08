@@ -14,6 +14,9 @@
 
 /* Base layer for global HTML tag styling */
 @layer base {
+  body {
+    @apply bg-background;
+  }
   h1 {
     @apply text-4xl font-bold text-primary text-center;
   }

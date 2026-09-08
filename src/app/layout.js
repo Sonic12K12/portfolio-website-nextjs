@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${FiraCode.variable} font-sans antialiased bg-background min-h-screen`}
+        className={`${FiraCode.variable} font-sans antialiased min-h-screen`}
       >
         <Navbar />
 
