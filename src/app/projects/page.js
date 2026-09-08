@@ -42,7 +42,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Comming Soon",
+    title: "Coming Soon",
     description: <>Next project is comming soon.</>,
     imageUrl: "/img/placeholder.jpg",
     url: "",
