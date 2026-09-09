@@ -18,7 +18,7 @@ export function proxy(request) {
     const response = NextResponse.redirect(url);
 
     // Set the authentication cookie directly on the response
-    response.cookies.set("calculator_auth", "granted", {
+    response.cookies.set("portfolio_auth", "granted", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       maxAge: 60 * 60 * 24 * 30, // 30 days
