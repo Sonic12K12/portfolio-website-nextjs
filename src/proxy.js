@@ -6,7 +6,7 @@ export function proxy(request) {
 
   // 1. Check for the magic link code in the URL parameters
   const magicCode = url.searchParams.get("code");
-  const EXPECTED_PASS = process.env.CALCULATOR_PASS;
+  const EXPECTED_PASS = process.env.PORTFOLIO_PASS;
 
   // 2. If the code is present and correct, grant access automatically
   if (magicCode && magicCode === EXPECTED_PASS) {
