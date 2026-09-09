@@ -25,7 +25,7 @@ const projects = [
         franchises and custom movie marathons.
       </>
     ),
-    imageUrl: "/img/WatchTime_logo_provisional.webp",
+    imageUrl: "/img/WatchTime_logo_provisional_v2.webp",
     url: "/watch-time",
   },
   {
