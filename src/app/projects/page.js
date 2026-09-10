@@ -42,6 +42,19 @@ const projects = [
   },
   {
     id: 4,
+    title: "Game Development",
+    description: (
+      <>
+        Two interactive game projects created during the &quot;Game
+        Engines&quot; module. A practical deep dive into Unity and Godot
+        focusing on game mechanics, including a local multiplayer game.
+      </>
+    ),
+    imageUrl: "/img/game_dev_preview_image.webp",
+    url: "",
+  },
+  {
+    id: 5,
     title: "Coming Soon",
     description: <>Next project is comming soon.</>,
     imageUrl: "/img/placeholder.webp",
