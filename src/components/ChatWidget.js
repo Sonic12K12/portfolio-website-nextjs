@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import { id } from "zod/locales";
+import ReactMarkdown from "react-markdown";
 
 export default function ChatWidget() {
   // Toggle state for the chat window visibility
@@ -75,7 +76,42 @@ export default function ChatWidget() {
                 >
                   {m.parts?.map((part, index) =>
                     part.type === "text" ? (
-                      <span key={index}>{part.text}</span>
+                      <div key={index} className="leading-normal">
+                        <ReactMarkdown
+                          components={{
+                            // Force paragraphs to inherit the container's text color and add bottom spacing
+                            p: ({ node, ...props }) => (
+                              <p
+                                {...props}
+                                className="text-inherit mb-2 last:mb-0"
+                              />
+                            ),
+                            // Render links to open in a new tab with tailored hover states
+                            a: ({ node, ...props }) => (
+                              <a
+                                {...props}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 transition-colors"
+                              />
+                            ),
+                            ul: ({ node, ...props }) => (
+                              <ul
+                                {...props}
+                                className="list-disc pl-4 my-2 space-y-1"
+                              />
+                            ),
+                            code: ({ node, inline, ...props }) => (
+                              <code
+                                {...props}
+                                className="bg-zinc-900 text-indigo-300 px-1.5 py-0.5 rounded text-[11px] font-mono border border-zinc-700/50"
+                              />
+                            ),
+                          }}
+                        >
+                          {part.text}
+                        </ReactMarkdown>
+                      </div>
                     ) : null,
                   )}
                 </div>
