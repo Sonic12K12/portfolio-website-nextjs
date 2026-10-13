@@ -47,7 +47,7 @@ export default function ChatWidget() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end whitespace-pre-wrap">
       {/* Conditionally render the chat window */}
       {isOpen && (
-        <div className="w-auto sm:w-96 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 rounded-xl shadow-2xl mb-4 overflow-hidden flex flex-col h-[500px] sm:h-[60vh] sm:max-h-[900px] sm:min-h-[600px]">
+        <div className="w-auto sm:w-96 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 rounded-xl shadow-2xl mb-4 overflow-hidden flex flex-col h-125 sm:h-[60vh] sm:max-h-225 sm:min-h-150">
           {/* Header section */}
           <div className="bg-primary text-white p-4 font-semibold flex justify-between items-center">
             <span>Konst.log()</span>
