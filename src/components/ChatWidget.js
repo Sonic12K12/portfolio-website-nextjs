@@ -80,11 +80,11 @@ export default function ChatWidget() {
                       <div key={index} className="leading-normal">
                         <ReactMarkdown
                           components={{
-                            // Force paragraphs to inherit the container's text color and add bottom spacing
+                            // Reduce bottom margin to keep paragraphs tight
                             p: ({ node, ...props }) => (
                               <p
                                 {...props}
-                                className="text-inherit mb-2 last:mb-0"
+                                className="text-inherit mb-1.5 last:mb-0"
                               />
                             ),
 
@@ -99,12 +99,32 @@ export default function ChatWidget() {
                                 {children}
                               </Link>
                             ),
+
+                            // Style unordered lists: compact spacing and list-outside for clean alignment
                             ul: ({ node, ...props }) => (
                               <ul
                                 {...props}
-                                className="list-disc pl-4 my-2 space-y-1"
+                                className="list-disc list-outside pl-4 my-1.5 space-y-1"
                               />
                             ),
+
+                            // Style ordered lists (in case the AI enumerates projects with numbers)
+                            ol: ({ node, ...props }) => (
+                              <ol
+                                {...props}
+                                className="list-decimal list-outside pl-4 my-1.5 space-y-1"
+                              />
+                            ),
+
+                            // Remove margins from paragraphs inside list items and keep nested lists tight
+                            li: ({ node, ...props }) => (
+                              <li
+                                {...props}
+                                className="[&>p]:m-0 [&>p]:inline [&_ul]:my-0.5 [&_ul]:pl-3"
+                              />
+                            ),
+
+                            // Style inline code blocks for technical terms
                             code: ({ node, inline, ...props }) => (
                               <code
                                 {...props}
