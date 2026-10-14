@@ -44,6 +44,22 @@ export default function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  // Trigger auto-open only on desktop screens after a 3.5 second delay
+  useEffect(() => {
+    // Check if the current window width is 768px or greater (Tailwind's 'md' breakpoint)
+    // This prevents the chat from automatically blocking the screen on mobile devices
+    if (window.innerWidth >= 768) {
+      // Set a timer to open the chat widget
+      const autoOpenTimer = setTimeout(() => {
+        setIsOpen(true); // Replace 'setIsOpen' with your actual state updater function
+      }, 6000);
+
+      // Cleanup function to clear the timeout if the component unmounts
+      // This prevents memory leaks if the user navigates away before the timer fires
+      return () => clearTimeout(autoOpenTimer);
+    }
+  }, []);
+
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end whitespace-pre-wrap">
       {/* Conditionally render the chat window */}
