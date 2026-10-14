@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import { id } from "zod/locales";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 
 export default function ChatWidget() {
   // Toggle state for the chat window visibility
@@ -86,14 +87,17 @@ export default function ChatWidget() {
                                 className="text-inherit mb-2 last:mb-0"
                               />
                             ),
-                            // Render links to open in a new tab with tailored hover states
-                            a: ({ node, ...props }) => (
-                              <a
-                                {...props}
-                                target="_blank"
-                                rel="noopener noreferrer"
+
+                            // Render all markdown links via Next.js Link to prevent full page reloads
+                            // and keep the chat widget open during navigation
+                            a: ({ node, href, children, ...props }) => (
+                              <Link
+                                href={href || "/"}
                                 className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 transition-colors"
-                              />
+                                {...props}
+                              >
+                                {children}
+                              </Link>
                             ),
                             ul: ({ node, ...props }) => (
                               <ul
