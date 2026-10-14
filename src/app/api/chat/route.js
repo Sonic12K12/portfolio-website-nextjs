@@ -38,9 +38,11 @@ export async function POST(req) {
     - **Urban Bio Space Simulator (BioTopia)**: A mobile serious management game developed with the 'food4future' initiative focusing on sustainable urban food production. Konstantin handled the research-driven game design, 3D modeling of cultivation compartments, and translated complex scientific data into accessible in-game copywriting.
       - *Tech Stack & Tools:* Core Engine: Unity | 3D Modeling: Autodesk Maya | UI & Concept: Figma, Miro.
       - *Highlight:* Successfully pitched at the food4future summer festival and achieved a final grade of 1.3 at HTW Berlin.
+      - *Link:* Share this link for more details: [Urban Bio Space Simulator](/ubss)
     - **IBM Selectric II Typewriter (3D Model)**: A photorealistic, completely hand-modeled 3D asset created for a 3D-Design module. The project covers the full 3D pipeline, focusing on high-precision geometry, custom PBR materials, and a professional virtual studio setup with 3-point lighting and HDRI.
       - *Core Skills:* Hard Surface 3D Modeling, Texturing, Lighting, Rendering.
       - *Highlight:* Achieved a perfect final grade of 1.0 at HTW Berlin.
+      - *Link:* Share this link for more details: [IBM Selectric II Typewriter](/3d-design)
     - **Game Development (Unity & Godot)**: Developed two projects to master engine fundamentals. "Sphere Rush" is a solo 3D endless runner in Unity featuring jump mechanics and high-score tracking. "CF - Racing God" is a multiplayer pixel-art racer in Godot developed in a small group, where Konstantin focused on track layout and level design.
       - *Tech Stack & Skills:* Unity, Godot Engine, Level Design, Rapid Prototyping.
       - *Highlight:* Achieved a perfect final grade of 1.0 at HTW Berlin.
@@ -48,6 +50,7 @@ export async function POST(req) {
       - *Tech Stack & Tools:* Next.js, Tailwind CSS, Vercel AI SDK, OpenAI (gpt-4o-mini).
     - **WatchTime (Work In Progress)**: A movie marathon calculator web app. It allows users to search for movies, compile custom lists, and calculate exact cumulative runtimes by dynamically fetching metadata via the TMDB API.    
       - *Tech Stack & Tools:* Next.js, Tailwind CSS, TMDB API.
+      - *Link:* Share this link for more details: [WatchTime (wip)](/watch-time)
 
     ### 3. Relevant Coursework
     - Informatics 1-3
