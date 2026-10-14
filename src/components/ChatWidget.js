@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
-import { id } from "zod/locales";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 
@@ -12,6 +11,9 @@ export default function ChatWidget() {
 
   // Custom local state to reliably control the text input field
   const [input, setInput] = useState("");
+
+  // State to manage the unread notification badge on mobile devices
+  const [hasUnreadBadge, setHasUnreadBadge] = useState(false);
 
   // Initialize the Vercel AI SDK chat hook using the latest API
   // We extract messages, sendMessage for manual submission, and status for loading checks
@@ -44,19 +46,25 @@ export default function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // Trigger auto-open only on desktop screens after a 6 second delay
+  // Handle desktop auto-open vs mobile notification badge
   useEffect(() => {
     // Check if the current window width is 768px or greater (Tailwind's 'md' breakpoint)
-    // This prevents the chat from automatically blocking the screen on mobile devices
     if (window.innerWidth >= 768) {
-      // Set a timer to open the chat widget
+      // Desktop: Set a timer to open the chat widget completely
       const autoOpenTimer = setTimeout(() => {
         setIsOpen(true);
       }, 6000);
 
       // Cleanup function to clear the timeout if the component unmounts
-      // This prevents memory leaks if the user navigates away before the timer fires
       return () => clearTimeout(autoOpenTimer);
+    } else {
+      // Mobile: Set a timer to show a non-intrusive notification badge instead
+      const badgeTimer = setTimeout(() => {
+        setHasUnreadBadge(true);
+      }, 4000);
+
+      // Cleanup function for the mobile timer
+      return () => clearTimeout(badgeTimer);
     }
   }, []);
 
@@ -79,7 +87,7 @@ export default function ChatWidget() {
           <span>Konst.log()</span>
           <button
             onClick={() => setIsOpen(false)}
-            className="text-white hover:text-zinc-300 transition-colors cursor-pointer"
+            className="text-white hover:text-zinc-200 transition-colors"
           >
             ✕
           </button>
@@ -238,9 +246,21 @@ export default function ChatWidget() {
 
       {/* Floating action button - explicitly enabling pointer events here */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="pointer-events-auto cursor-pointer bg-primary hover:bg-indigo-600 text-white rounded-full p-4 shadow-lg transition-transform hover:scale-105 flex items-center justify-center"
+        onClick={() => {
+          // Toggle chat window and reset the unread badge if opening
+          setIsOpen(!isOpen);
+          if (!isOpen) setHasUnreadBadge(false);
+        }}
+        // Added relative positioning to anchor the absolute badge correctly
+        className="pointer-events-auto relative bg-primary hover:bg-indigo-600 text-white rounded-full p-4 shadow-lg transition-transform hover:scale-105 flex items-center justify-center"
       >
+        {/* Unread notification badge for mobile */}
+        {hasUnreadBadge && !isOpen && (
+          <span className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white shadow-md animate-bounce border-2 border-zinc-900">
+            1
+          </span>
+        )}
+
         {isOpen ? (
           <svg
             className="w-6 h-6"
