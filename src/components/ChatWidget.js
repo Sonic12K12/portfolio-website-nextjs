@@ -252,6 +252,9 @@ export default function ChatWidget() {
               </svg>
             </button>
           </div>
+          <p className="relative top-1 text-center text-[10px] leading-tight text-zinc-500">
+            AI-generated responses may be inaccurate.
+          </p>
         </form>
       </div>
 
