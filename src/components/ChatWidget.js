@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function ChatWidget() {
   // Toggle state for the chat window visibility
@@ -67,6 +68,16 @@ export default function ChatWidget() {
       return () => clearTimeout(badgeTimer);
     }
   }, []);
+
+  const pathname = usePathname();
+
+  // Define routes where the banner should not render
+  const hiddenRoutes = ["/login"];
+
+  // Hide the component completely on blacklisted routes
+  if (hiddenRoutes.includes(pathname)) {
+    return null;
+  }
 
   return (
     // Added pointer-events-none to the wrapper so the invisible flex-container doesn't block clicks on the main website
