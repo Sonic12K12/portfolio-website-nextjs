@@ -194,6 +194,58 @@ export default function PrivacyPolicy() {
           Art. 21 GDPR further down below.
         </p>
 
+        <h3>Use of an AI Chatbot</h3>
+
+        <h4>Nature and Purpose of Processing</h4>
+        <p>
+          We have integrated an artificial intelligence chatbot on our website
+          to interactively answer questions about the portfolio, projects, and
+          skills of the website operator. When you use the chat widget, your
+          text inputs and technically necessary metadata (such as your IP
+          address and timestamp) are transmitted to the servers of our service
+          provider. We use the official API of the provider. Data transmitted
+          via this API is not used by the provider to train their artificial
+          intelligence models.
+        </p>
+
+        <h4>Legal Basis</h4>
+        <p>
+          The processing of this data is based on our legitimate interest (Art.
+          6 Para. 1 lit. f GDPR) in providing an innovative, interactive, and
+          user-friendly communication channel for website visitors and potential
+          employers.
+        </p>
+
+        <h4>Recipients</h4>
+        <p>
+          The recipient of the data and service provider for the artificial
+          intelligence is OpenAI, L.L.C., 3180 18th Street, San Francisco, CA
+          94110, USA. The data is routed technically through our hosting
+          infrastructure to the provider.
+        </p>
+
+        <h4>Data Transfer to Third Countries</h4>
+        <p>
+          The collected data is transferred to the following third country: USA.
+          OpenAI is certified under the EU-US Data Privacy Framework (DPF),
+          which ensures an adequate level of data protection as determined by
+          the EU Commission.
+        </p>
+
+        <h4>Retention Period</h4>
+        <p>
+          Your chat inputs are processed in real-time. OpenAI retains API data
+          for a maximum of 30 days strictly for security and abuse monitoring
+          purposes, after which it is permanently deleted. We do not permanently
+          store the chat transcripts on our servers.
+        </p>
+
+        <h4>Provision Required or Necessary</h4>
+        <p>
+          The use of the chatbot is entirely voluntary. If you do not wish to
+          transmit data, simply do not interact with the chat widget.
+        </p>
+
         <h3>Audience Measurement</h3>
         <h4>Nature and Purpose of Processing</h4>
         <p>
